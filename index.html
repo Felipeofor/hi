@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Preparación y Mapa de Ruta</title>
   <style>
     *, *::before, *::after {
@@ -126,6 +126,23 @@
       font-weight: bold;
     }
 
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      width: 100%;
+      max-width: 720px;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     @media screen and (max-width: 768px) {
       body {
         padding: 20px;
@@ -166,20 +183,13 @@
 </head>
 <body>
 
-  <h1>📞 Cómo prepararte para la llamada</h1>
-
-  <div class="section">
-    <p>Felicitaciones por haber agendado tu llamada, que ahora se encuentra reservada por la cantidad de demanda que está teniendo nuestro servicio y también por la alta cantidad de bots y spam.</p>
-    <ul>
-      <li>✅ Revisá tu mail y chequeá que te llegó nuestra invitación. Aceptala para que quede agendada en tu calendario.</li>
-      <li>✅ Si es necesario, invitá a tu compañero, socio o pareja a la llamada.</li>
-      <li>✅ Respetamos muchísimo tu tiempo, por eso también te pedimos que respetes el nuestro:
-        <ul>
-          <li>Atendé en un espacio tranquilo, desde tu computadora.</li>
-          <li>Conectate de forma puntual al horario pactado.</li>
-        </ul>
-      </li>
-    </ul>
+  <h1>Quienes somos y qué hacemos</h1>
+  <div class="section" style="display: flex; flex-direction: column; align-items: center;">
+    <p>Hola, mi nombre es Felipe Ramos, soy fundador de YouTube Automation. Nuestro objetivo es ayudarte a crear y escalar canales de YouTube de forma automatizada, generando ingresos pasivos y escalables.</p>
+    <p>Te invitamos a ver nuestro video de presentación para conocernos mejor y entender cómo podemos ayudarte:</p>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/XWwA8fhrwtw?si=hK8yiyqz5ICFVg61" title="YouTube video player" allowfullscreen></iframe>
+    </div>
   </div>
 
   <div style="text-align: center; margin-top: 40px;">
@@ -240,7 +250,8 @@
   </div>
 
   <p style="text-align: center; margin-top: 20px; color: #aaa;">
-    Si tienes alguna duda, escribinos a: <br> <strong>potenciatunegociohoy@gmail.com</strong>
+    Si tienes alguna duda, escribinos a:<br>
+    <strong>potenciatunegociohoy@gmail.com</strong>
   </p>
 
   <footer style="text-align: center; margin-top: 50px; color: #aaa;">
