@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Preparación y Mapa de Ruta</title>
   <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #0e0e0e;
       font-family: 'Segoe UI', sans-serif;
@@ -50,6 +55,8 @@
       border-radius: 15px;
       width: 300px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      flex: 1;
+      max-width: 400px;
     }
 
     .card.orange {
@@ -108,6 +115,17 @@
       font-weight: bold;
     }
 
+    a.button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #FFD000;
+      color: #000;
+      border-radius: 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     @media screen and (max-width: 768px) {
       body {
         padding: 20px;
@@ -122,44 +140,28 @@
       }
 
       .container {
-        display: flex;
-        flex-direction: column !important;
+        flex-direction: column;
         align-items: center;
-        gap: 50px;
       }
 
       .card {
         width: 100%;
-        max-width: 400px;
       }
-
-      iframe {
-        height: 200px;
-      }
-
-      @media screen and (max-width: 480px) {
-        h1, h2 {
-          font-size: 1.8em;
-        }
-
-        .section, .card {
-          padding: 15px;
-        }
-
-        .card {
-          width: 100%;
-          max-width: 350px;
-        }
-
-        iframe {
-          width: 100%;
-          height: 180px;
-        }
-        
-      }
-      
     }
 
+    @media screen and (max-width: 480px) {
+      h1, h2 {
+        font-size: 1.8em;
+      }
+
+      .section, .card {
+        padding: 15px;
+      }
+
+      .card {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -180,23 +182,13 @@
     </ul>
   </div>
 
-  <!-- video de presentación -->
-  <!-- <h1> Quienes somos y qué hacemos</h1>
-  <div class="section" style="display: flex; flex-direction: column; align-items: center;">
-    <p>Hola, mi nombre es Felipe Ramos, soy fundador de YouTube Automation. Nuestro objetivo es ayudarte a crear y escalar canales de YouTube de forma automatizada, generando ingresos pasivos y escalables.</p>
-    <p>Te invitamos a ver nuestro video de presentación para conocernos mejor y entender cómo podemos ayudarte:</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XWwA8fhrwtw?si=hK8yiyqz5ICFVg61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-</div>
--->
-
   <div style="text-align: center; margin-top: 40px;">
-    <a href="https://calendly.com/potenciatunegociohoy/30min" style="display: inline-block; padding: 15px 30px; background-color: #FFD000; color: #000; border-radius: 30px; font-size: 1.2em; text-decoration: none; font-weight: bold;">Agendar Llamada</a>
-  </div> 
+    <a href="https://calendly.com/potenciatunegociohoy/30min" class="button">Agendar Llamada</a>
+  </div>
 
   <h2>🚀 Mapa de Ruta – Programa de YouTube Automation</h2>
 
   <div class="container">
-
     <div class="card">
       <div class="fase-label">FASE Nº 1</div>
       <h2>FUNDACIONES</h2>
@@ -241,13 +233,15 @@
         <li><span class="highlight">Meta:</span> Canal monetizado y generando ingresos automáticos</li>
       </ul>
     </div>
-
   </div>
 
   <div style="text-align: center; margin-top: 40px;">
-    <a href="https://calendly.com/potenciatunegociohoy/30min" style="display: inline-block; padding: 15px 30px; background-color: #FFD000; color: #000; border-radius: 30px; font-size: 1.2em; text-decoration: none; font-weight: bold;">Agendar Llamada</a>
+    <a href="https://calendly.com/potenciatunegociohoy/30min" class="button">Agendar Llamada</a>
   </div>
-  <p style="text-align: center; margin-top: 20px; color: #aaa;">Si tienes alguna duda, puedes contactarnos a través de nuestro correo electrónico: potenciatunegociohoy@gmail.com</p>
+
+  <p style="text-align: center; margin-top: 20px; color: #aaa;">
+    Si tienes alguna duda, escribinos a: <br> <strong>potenciatunegociohoy@gmail.com</strong>
+  </p>
 
   <footer style="text-align: center; margin-top: 50px; color: #aaa;">
     <p>© 2025 YouTube Automation. Todos los derechos reservados.</p>
